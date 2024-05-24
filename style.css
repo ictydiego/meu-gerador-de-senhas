@@ -61,8 +61,22 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-.button-cta, .btn-add, .botaoExibirSenhas {
+.button-cta, .btn-add{
   width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #3EB72B;
+  border: 0;
+  border-radius: 20px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botaoExibirSenhas {
+  width: 50%;
   height: 40px;
   margin-top: 20px;
   background-color: #3EB72B;
