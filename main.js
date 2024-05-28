@@ -4,7 +4,11 @@ let buttonElement = document.querySelector("#button");
 let tamanhoDaSenha = document.querySelector("#valor");
 let Senha = document.querySelector("#password");
 let containerPalavraChave = document.querySelector("#containerPalavraChave");
+
+
+
 let letrasNumeCaracEsp = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!/!@#$%&*()_';
+
 let novaSenha = '';
 
 tamanhoDaSenha.innerHTML = sliderElement.value;
@@ -100,6 +104,7 @@ function salvarTarefas() {
 
 function adicionaTarefasSalvas() {
   const tarefasJSON = localStorage.getItem('tarefas');
+  console.log(tarefasJSON);
   const listaDeTarefas = JSON.parse(tarefasJSON) || [];
   listaDeTarefas.forEach((tarefa) => criaTarefa(tarefa.nome, tarefa.senha));
 }
@@ -126,5 +131,6 @@ function Exibir() {
     Exibir2.innerText = "Exibir Senhas";
     }
   }
+
 
 adicionaTarefasSalvas();
