@@ -104,9 +104,23 @@ function adicionaTarefasSalvas() {
   listaDeTarefas.forEach((tarefa) => criaTarefa(tarefa.nome, tarefa.senha));
 }
 
+//Exibir as senhas salvas atraves da senha fornecida.
+const containerExibir = document.querySelector('.container');
+const spanCadeado = document.querySelector('.cadeado');
+const spanCadeado2 = document.querySelector('.cadeado2');
 function Exibir() {
-  const containerExibir = document.querySelector('.container');
-  containerExibir.classList.toggle('hide');
-}
+  if(containerExibir.classList.contains('hide')){
+    const number = prompt("Digite sua senha ");
+    if(number === "1234"){
+      containerExibir.classList.toggle('hide');
+      spanCadeado2.classList.remove('hide');
+      spanCadeado.classList.add('hide');
+    }  
+  }else{
+    containerExibir.classList.toggle('hide');
+    spanCadeado2.classList.add('hide');
+    spanCadeado.classList.remove('hide');
+    }
+  }
 
 adicionaTarefasSalvas();
