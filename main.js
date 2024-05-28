@@ -106,20 +106,24 @@ function adicionaTarefasSalvas() {
 
 //Exibir as senhas salvas atraves da senha fornecida.
 const containerExibir = document.querySelector('.container');
+const Exibir2 = document.querySelector('.exibir2');
+Exibir2.innerText = "Exibir Senhas";
 const spanCadeado = document.querySelector('.cadeado');
 const spanCadeado2 = document.querySelector('.cadeado2');
 function Exibir() {
   if(containerExibir.classList.contains('hide')){
-    const number = prompt("Digite sua senha ");
+    const number = prompt("Digite sua senha");
     if(number === "1234"){
       containerExibir.classList.toggle('hide');
       spanCadeado2.classList.remove('hide');
       spanCadeado.classList.add('hide');
+      Exibir2.textContent = "Ocultar Senhas";
     }  
   }else{
     containerExibir.classList.toggle('hide');
     spanCadeado2.classList.add('hide');
     spanCadeado.classList.remove('hide');
+    Exibir2.innerText = "Exibir Senhas";
     }
   }
 
