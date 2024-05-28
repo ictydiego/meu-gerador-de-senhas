@@ -76,6 +76,7 @@ input[type="text"] {
 }
 
 .botaoExibirSenhas {
+  min-width: 541px;
   width: 50%;
   height: 40px;
   margin-top: 20px;
@@ -169,3 +170,4 @@ h1 {
 .hide {
   display: none;
 }
+
