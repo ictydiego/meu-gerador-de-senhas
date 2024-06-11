@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+
+// Define a string de caracteres permitidos para a senha
+const char letrasNumeCaracEsp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+
+// Função para gerar uma senha aleatória
+//Essa funcao recebera o valor tamanho(parametro) que o usuario inputar na funcao main.
+void gerarSenha(int tamanho) {
+
+    char senhaGerada[tamanho + 1]; // +1 para o caractere nulo no final da string ex: era 10 ficou 11;
+    for (int i = 0; i < tamanho; ++i) {
+        int indiceAleatorio = rand() % strlen(letrasNumeCaracEsp); //rand() gera um num aleatorio,strlen() descobre o tamanho da string
+        senhaGerada[i] = letrasNumeCaracEsp[indiceAleatorio];
+    }
+    senhaGerada[tamanho] = '\0'; // Adiciona o caractere nulo no final para encerrar a string;
+
+    printf("Senha gerada: %s\n", senhaGerada);
+}
+
+int main() {
+
+    int tamanhoSenha;
+    puts("É altamente recomendado que a senha tenha no minimo 12 carecteres");
+    puts("Digite quantos caracteres voce quer que sua senha tenha");
+	scanf("%d", &tamanhoSenha);
+	if(tamanhoSenha < 12){
+	    puts("senha é menor que o minimo recomendado!!");
+	}
+	//chama a função gerarSenha e passa o argumento(tamanho que quero da minha senha);
+    gerarSenha(tamanhoSenha);
+
+    return 0;
+}
