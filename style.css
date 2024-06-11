@@ -61,7 +61,7 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-.button-cta, .btn-add{
+.button-cta{
   width: 100%;
   height: 40px;
   margin-top: 20px;
@@ -75,22 +75,9 @@ input[type="text"] {
   transition: background-color 0.3s;
 }
 
-.botaoExibirSenhas {
-  min-width: 541px;
-  width: 50%;
-  height: 40px;
-  margin-top: 20px;
-  background-color: #3EB72B;
-  border: 0;
-  border-radius: 20px;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.button-cta:hover, .btn-add:hover, .botaoExibirSenhas:hover {
+
+.button-cta:hover {
   background-color: var(--primary-color-darker);
 }
 
@@ -139,35 +126,7 @@ input[type="text"] {
   opacity: 1;
 }
 
-.senhasLi {
-  margin-top: 10px;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Apagar {
-  background-color: red;
-  color: #FFF;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.Apagar:hover {
-  background-color: darkred;
-}
-
-h1 {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .hide {
   display: none;
 }
-
