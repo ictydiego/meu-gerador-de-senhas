@@ -35,6 +35,6 @@ int main() {
     gerarSenha(tamanhoSenha);
     puts("Deseja gerar mais alguma senha? S/N");
     scanf("%s", &resp);
-}while(resp != 'n');
+}while(resp != 'N' && resp != 'n');
     return 0;
 }
