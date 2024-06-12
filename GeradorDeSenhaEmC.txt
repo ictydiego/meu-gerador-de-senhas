@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <string.h>
+#include <stdio.h> //biblioteca de entrada e saída
+#include <stdlib.h> //alocação de memória, conversões numéricas, controle de processos e outras operações padrão.
+#include <string.h> //manipulação de strings.
 
 // Define a string de caracteres permitidos para a senha
 const char letrasNumeCaracEsp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
